@@ -56,6 +56,11 @@ dependencies {
     // Coroutines
     api "org.jetbrains.kotlinx:kotlinx-coroutines-core:$rootProject.coroutines"
     api "org.jetbrains.kotlinx:kotlinx-coroutines-android:$rootProject.coroutines"
+
+
+    // Sthetho Sqliteデバッグツールとして
+    debugImplementation'com.facebook.stetho:stetho:1.5.1'
+    debugImplementation'com.facebook.stetho:stetho-okhttp3:1.5.1'
 }
 
 kotlin {

@@ -13,6 +13,7 @@ import androidx.lifecycle.Observer
 import androidx.lifecycle.ViewModelProviders
 import androidx.recyclerview.widget.LinearLayoutManager
 import androidx.recyclerview.widget.RecyclerView
+import com.facebook.stetho.Stetho
 
 import kotlinx.android.synthetic.main.activity_main.*
 import net.kwmt27.roomwordsample.infrastructure.WordEntity
@@ -25,6 +26,8 @@ class MainActivity : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_main)
         setSupportActionBar(toolbar)
+
+        Stetho.initializeWithDefaults(this);
 
 
         fab.setOnClickListener {
